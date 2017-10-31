@@ -1,0 +1,20 @@
+{
+  "name": "cad-wordpress-theme",
+  "version": "3.0.0",
+  "authors": [
+    "marcelbadua <marcel@customadesign.com>"
+  ],
+  "description": "CAD Wordpress Theme utilizes the use of bower and gulp. to be used for bootstrap and it's powerful LESS files",
+  "keywords": [
+    "bootstrap",
+    "less",
+    "css",
+    "gulp",
+    "bower"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  },
+  "license": "MIT",
+  "private": true
+}

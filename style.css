@@ -1,0 +1,343 @@
+/*
+Theme Name: Cutom Theme
+Description: T.H.E.M.E.
+Version: 3.0.0
+*/
+
+@font-face {
+    font-family: rockwell;
+    src: url(fonts/rockwell/ROCK.TTF);
+}
+
+@font-face {
+    font-family: rockwellbold;
+    src: url(fonts/rockwell/rockb.ttf);
+}
+
+body {
+	font-family: 'rockwell';
+	color: #BCBCBC;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'rockwellbold';
+	color: #333;
+}
+
+a {
+	color: #3EB3A5;
+	text-decoration: none;
+	transition: all .3s;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #333;
+}
+
+article.post .entry img {
+    max-width: 100%;
+}
+
+#main-banner {
+	height: 600px;
+	width: 100%;
+    background: transparent;
+	// background-image: url(images/banner.jpg);
+	// background-size: cover;
+	// background-position: center;
+}
+
+header {
+    border-bottom: solid 1px #BCBCBC;
+}
+
+.home header {
+    margin-bottom: 100px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.menu-inline {
+    display: inline-block;
+}
+
+.nav-menus {
+    padding: 0;
+    flex: 1;
+}
+
+ul#menu-main-left-menu {
+    text-align: right;
+}
+
+ul#menu-main-right-menu {
+    text-align: left;
+}
+
+.nav-menus li {
+    display: inline-block;
+    padding: 15px 25px;
+    font-family: 'rockwellbold';
+    font-size: 30px;
+}
+
+.nav-menus li a {
+    color: #BCBCBC;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.nav-menus li:hover a, .nav-menus li:focus a, .nav-menus li.active a {
+    color: #3EB3A5;
+}
+
+.nav-menus li:after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: transparent;
+    transition: all .3s;
+}
+
+.nav-menus li:hover:after, .nav-menus li:focus:after, .nav-menus li.active:after {
+    background-color: #BCBCBC;
+}
+
+.nav-menus li > ul li {
+    display: block;
+    padding: 0;
+}
+
+.logo-container {
+    position: relative;
+    width: 197px;
+}
+
+.logo-container img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-65%);
+    background-color: #FFF;
+    border-radius: 100%;
+    padding: 6px;
+}
+
+#post-loop .circle, .single .circle {
+    width: 97px;
+    height: 97px;
+    border: solid 5px #EEE;
+    border-radius: 100%;
+}
+
+#post-loop .circle .the-post-date, .single .circle .the-post-date {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 3.5;
+    color: #3EB3A5;
+}
+
+.post-metas {
+    padding: 10px 0;
+}
+
+.post-metas i {
+    color: #3EB3A5;
+}
+
+.home .post-loop-item {
+    display: none;
+}
+
+.post-loop-item {
+    padding: 30px 0;
+    background-image: url('images/dash.fw.png');
+    background-position: center bottom;
+    background-repeat: repeat-x;
+}
+
+.post-loop-item hr, .single hr.single-hr {
+    margin: 0;
+}
+
+.post-loop-item h3, .single h1.post-title {
+    margin: 15px 0;
+}
+
+.post-loop-item .read-more {
+    font-weight: bold;
+    position: relative;
+    padding: 5px 0;
+}
+
+.post-loop-item .read-more:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    width: 100%;
+    background-color: #3EB3A5;
+    transition: all .3s;
+}
+
+.post-loop-item .read-more:hover:after {
+    width: 75%;
+}
+
+.load-more {
+    margin-top: 30px;
+}
+
+.btn-custom {
+    background-color: #3EB3A5;
+    color: #FFF;
+}
+
+.btn-custom:hover {
+    color: #FFF;
+}
+
+.next-post a {
+    background-color: #3EB3A5;
+    color: #FFF;
+    padding: 6px 12px;
+    display: inline-block;
+    font-weight: 400;
+    border-radius: 4px;
+    line-height: 1.5;
+    border: solid 1px #3eb3a5;
+    vertical-align: middle;
+}
+
+div#colophon {
+    padding: 100px 0 50px;
+}
+
+.registered-tags h4 {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+.comment_count {
+    border-style: solid;
+    border-width: 1px 0 1px 0;
+    padding: 20px 0;
+}
+
+.comment_count .com-count p {
+    color: #000;
+    font-size: 24px;
+    margin: 0;
+}
+
+.comment_count .next_pager {
+    text-align: right;
+}
+
+div#respond {
+    margin-bottom: 30px;
+}
+
+#respond > h3 {
+    margin: 40px 0;
+}
+
+#commentform label {
+    padding: 15px 0;
+}
+
+#commentform input[type="text"], #commentform textarea {
+    padding: 15px;
+    background-color: #EBEBEB;
+    width: 100%;
+    margin-bottom: 15px;
+    height: auto;
+    resize: none;
+}
+
+#commentform input[type="text"]:focus, #commentform textarea:focus {
+    background-color: #FEFEFE;
+}
+
+#commentform input#author {
+    margin-right: 5%;
+    width: 95%;
+}
+
+#commentform input#email {
+    margin-left: 5%;
+    width: 95%;
+}
+
+#commentform input#submit {
+    width: 100%;
+    padding: 11px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+ol.commentlist {
+    padding: 0;
+    margin-top: 50px;
+    display: block;
+}
+
+ol.commentlist li, ol.commentlist li .children {
+    display: flow-root;
+    margin-top: 15px;
+}
+
+ol.commentlist > li {
+    display: none;
+    list-style: none;
+}
+
+.comment-author img {
+    border-radius: 100%;
+    padding: 5px;
+    box-shadow: 0 0 1px #AAA;
+}
+
+.author-name .fn {
+    font-size: 30px;
+    display: block;
+    margin: 25px 0;
+    color: #3eb3a5;
+}
+
+.comment-message {
+    background-color: #ebebeb;
+    color: #333;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.comment-message p {
+    margin: 0;
+}
+
+.reply {
+    margin-left: 15px;
+}
+
+#comment-wrap .navigation {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#comment-wrap .navigation a {
+    display: inline-block;
+    background-color: #3eb3a5;
+    color: #FFF;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 20px;
+}
