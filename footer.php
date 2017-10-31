@@ -14,28 +14,19 @@
     <?php //get_template_part( 'content', 'footer' ); ?>
 
     <div id="colophon">
-
         <div class="container">
-
             <div class="row">
-
                 <div class="col-sm-12 text-center">
-
                     <span>Copyrights (c)
                         <?php 
                         echo bloginfo( 'name' )." ";
                         echo date( "Y" );
                         ?>
                     </span>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
 </div>  <!-- /#page-wrap -->
 
 <?php wp_footer(); ?>
