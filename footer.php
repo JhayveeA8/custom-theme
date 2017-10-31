@@ -4,6 +4,9 @@
  *
  * Contains the closing of the #content div and all content after
  *
+ *
+ * NONE
+ *
  * @package cad-wp-theme
  * @author marcelbadua
  */
